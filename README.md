@@ -1,34 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+Introduction
+An appointment management system is a software used by companies and service providers to streamline their service appointments. By using the system, potential customers can know and choose their preferred appointment times according to the companies and service providers' available time slots. This project does not include a B2C marketplace-like interface for customers to browse different service providers.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Requirements
+Create a login system for users to register an account with the system. You may add social logins like Google or Facebook to enhance the sign up/sign in user experience.
+Use a third party JavaScript library or plugin to display a calendar with the available time slots for selected time periods (e.g. a week).
+A business side admin dashboard for businesses to manage available appointment times and future appointments.
+A customer interface where customers can schedule, view, or cancel their appointments with a business.
+Use the simplest scheduler (cron job) to send customers email reminders prior to their appointments.
+Suggested Implementation
+Create a simple login system for registration. Alternatively, use Google, Facebook, or other social login integrations for sign up/sign in.
+Use third party JavaScript calendar like FullCalendar or Javascript event calendar.
+Create a form for logged in customers. The form will allow customers to book an appointment in the upcoming week.
+Create a report where businesses can view the scheduled appointments.
+Allow customers to view and edit their appointments (e.g. reschedule or cancel).
+Allow businesses to change the status of the event (e.g. confirmed, paid, cancelled).
